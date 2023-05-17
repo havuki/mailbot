@@ -1,1 +1,2 @@
-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
+#This file should contain your OpenAI API key. Obtain your API key from the OpenAI website and paste it as plain text into this file.
+<ADD OPENAI API KEY HERE>
