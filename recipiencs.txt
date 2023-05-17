@@ -1,1 +1,2 @@
-havu.kirjalainen@tuni.fi
+# Add the email addresses here, where you want to send the newsletter
+<ADD EMAIL HERE>
