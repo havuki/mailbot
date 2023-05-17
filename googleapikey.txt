@@ -1,1 +1,2 @@
-AIzaSyBv6XhtvpUfQ4srae-JS4173NLpYbD14EQ
+#This file should contain your Google Search API key. Obtain your API key from the Google Developer Console and paste it as plain text into this file.
+<ADD YOUR GOOGLE API KEY HERE>
