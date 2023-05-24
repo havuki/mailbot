@@ -15,7 +15,6 @@ def save_file(filepath, content):
         outfile.write(content)
 
 GOOGLE_SEARCH_API_KEY = open_file('googleapikey.txt')
-GOOGLE_SEARCH_CX = open_file('googlecx.txt')
 
 openai.api_key = open_file('openaiapikey.txt')
 
@@ -24,8 +23,7 @@ conversation = []
 def fetch_ai_news():
     # Load Google Search API key and cx from files
     GOOGLE_SEARCH_API_KEY = open_file('googleapikey.txt')
-    GOOGLE_SEARCH_CX = open_file('googlecx.txt')
-
+   
     # Build the Google Search service
     search_service = build("customsearch", "v1", developerKey=GOOGLE_SEARCH_API_KEY)
 
@@ -33,7 +31,7 @@ def fetch_ai_news():
     query = "AI"
 
     # Execute the search
-    results = search_service.cse().list(q=query, cx=GOOGLE_SEARCH_CX, num=6).execute()
+    results = search_service.cse().list(q=query,  num=6).execute()
 
     # Extract relevant information from the search results
     news_items = [{'title': result['title'], 'snippet': result['snippet'], 'url': result['link']} for result in results['items']]
