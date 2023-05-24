@@ -24,7 +24,6 @@ def fetch_ai_news():
     search_service = build("customsearch", "v1", developerKey=GOOGLE_SEARCH_API_KEY)
 
     # Define the search query
-    # You can chancge the subject of your newsletter here. Remember to also update the prompt1.txt
     query = "AI"
 
     # Execute the search
@@ -41,5 +40,3 @@ news_items = fetch_ai_news()
 # Extract news headlines
 headlines = [item['title'] for item in news_items]
 
-# Save the news headlines to the newsletter.txt file
-save_file('newsletter.txt', '\n'.join(headlines))
