@@ -20,8 +20,8 @@ def open_file(filepath):
 # Add the code for sending email using Mailgun API
 
 def send_email(subject, body, recipient):
-    api_key = "a9122930cddda57479ce622662ab3529-db4df449-aa636ea5"
-    domain = "sandboxf0cd3be736f24ecb83073d3889ed758d.mailgun.org"
+    api_key = <ADD YOUR API KEY HERE>
+    domain = <ADD YOUR DOMAIN HERE>
     url = f"https://api.mailgun.net/v3/{domain}/messages"
     return requests.post(
         url,
